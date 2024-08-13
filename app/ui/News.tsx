@@ -44,6 +44,13 @@ export const MockNews: PropsMock[] = [
         id: 5,
         link: 'how-to-create-an-effective-design-portfolio',
     },
+    {
+        title: 'How to Commit your Changes in your Code',
+        time: 'August 13, 2024',
+        img: '/commits.png',
+        id: 6,
+        link: 'how-to-commit-your-changes',
+    },
 ]
 
 export default function News() {
