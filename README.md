@@ -1,10 +1,7 @@
 ![Badge em Desenvolvimento](http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge)
 # Descrição
-Projeto fullstack de um blog com **autorização** e **autenticação** de usuário. Usando um perfil de ADM, é possível
-criar postagens para que todos os usuários cadastrados e autenticados possam visualizá-las e criar comentários. Um usuário
-ao se cadastrar, recebe uma mensagem no e-mail cadastrado.
+Projeto frontend de um blog de noticias.
 
-A aplicação inteira está deployada em serviços grátis: **Render.com(Frontend, Backend, Banco de dados)** e **CloudAMQP (RabbitMQ)**
 
 # Tecnologias / Ferramentas
 - Next.js
