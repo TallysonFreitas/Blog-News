@@ -258,9 +258,9 @@ const DesignFutureContent = () => {
                 Are we designing for users or ourselves?
             </h4>
             <p>
-                People don't always know what they want, even if they think the
-                do. As Joe Leech, a UX psychologist says, "People want more
-                choices, but can't deal with them.”
+                People don&apos;t always know what they want, even if they think
+                the do. As Joe Leech, a UX psychologist says, &lsquo;People want
+                more choices, but can&apos;t deal with them.”
             </p>
             <p>
                 So how do we design for our users, if our users aren&apos;t
@@ -275,17 +275,17 @@ const DesignFutureContent = () => {
                 of jam one week, followed by 30 varieties the following week.
             </p>
             <p>
-                They ran a study on how much jam was sold, and to everyone's
-                surprise, more jam was sold on the week with only 6 choices. But
-                interestingly enough, when the consumers were asked which week
-                they preferred more, they responded with the week that had 30
-                choices.
+                They ran a study on how much jam was sold, and to
+                everyone&apos;s surprise, more jam was sold on the week with
+                only 6 choices. But interestingly enough, when the consumers
+                were asked which week they preferred more, they responded with
+                the week that had 30 choices.
             </p>
             <p>
                 Using this analogy, Joe makes a point that is hard to argue
-                with, “A designer who doesn't understand psychology is going to
-                be more successful than an architect who doesn't understand
-                physics".
+                with, “A designer who doesn&apos;t understand psychology is
+                going to be more successful than an architect who doesn&apos;t
+                understand physics&lsquo;.
             </p>
             <p>
                 User research, and a wide variety of it, helps teams get as
@@ -325,8 +325,8 @@ const NavigationContent = () => {
                 component. The design of our nested components, the nav list
                 item and the shopping cart, will impact how we design our
                 navigation bar. For this reason, an optimal workflow includes
-                starting with the 'deepest' nested component and building up
-                from there.
+                starting with the &lsquo;deepest&lsquo; nested component and
+                building up from there.
             </p>
             <h3 className="text-3xl font-bold text-left w-full">
                 Nesting components
@@ -344,10 +344,10 @@ const NavigationContent = () => {
             </h4>
             <p>
                 Back on the main canvas, we&apos;d like to be able to tap
-                'Clothing' and navigate to an entire new Screen. If you&apos;d
-                connect the component using the Prototyping Connector to a new
-                screen, we could set up an Interaction. However, this would be
-                triggered if we tap anywhere within our component. This
+                &lsquo;Clothing&lsquo; and navigate to an entire new Screen. If
+                you&apos;d connect the component using the Prototyping Connector
+                to a new screen, we could set up an Interaction. However, this
+                would be triggered if we tap anywhere within our component. This
                 isn&apos;t what we want to do, as we want to trigger this
                 transition only from a specific element. This is where Event
                 Variables come in, which are special types of Variables not
@@ -389,11 +389,11 @@ const HowPortifolioContent = () => {
                 work and PDF design skills. Using tools like InDesign and
                 Photoshop you can create multi-page PDFs that can be fine-tuned
                 and formatted any way you like. With new software, like Framer,
-                it's becoming even easier to create a PDF online and share it in
-                no time. The result of your PDF portfolio will be a brochure or
-                one-pager piece that shows off examples of your best work along
-                with the descriptions of each project and more related
-                information.
+                it&apos;s becoming even easier to create a PDF online and share
+                it in no time. The result of your PDF portfolio will be a
+                brochure or one-pager piece that shows off examples of your best
+                work along with the descriptions of each project and more
+                related information.
             </p>
             <h5 className="text-3xl font-bold text-left w-full">
                 UX design portfolio
