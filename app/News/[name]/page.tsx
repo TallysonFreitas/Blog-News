@@ -439,7 +439,7 @@ const HowPortifolioContent = () => {
     )
 }
 
-export const MockNewsContent = [
+const MockNewsContent = [
     {
         title: 'Starting and Growing a Career in Web Design',
         time: 'April 8, 2022',
