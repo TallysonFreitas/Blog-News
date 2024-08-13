@@ -439,6 +439,129 @@ const HowPortifolioContent = () => {
     )
 }
 
+const HowCommitContent = () => {
+    return (
+        <>
+            <h2 className="text-3xl font-bold text-left w-full">
+                Type: Quais são os tipos de commit
+            </h2>
+            <p>
+                O type é responsável por nos dizer qual o tipo de alteração ou
+                iteração está sendo feita, das regras da convenção, temos os
+                seguintes tipos:
+            </p>
+            <ul>
+                <li className="pb-4">
+                    <span className="bg-gray-400 px-2 rounded mr-2">test:</span>{' '}
+                    indica qualquer tipo de criação ou alteração de códigos de
+                    teste. Exemplo: Criação de testes unitários.
+                </li>
+                <li className="pb-4">
+                    <span className="bg-gray-400 px-2 rounded mr-2">feat:</span>{' '}
+                    indica o desenvolvimento de uma nova feature ao projeto.
+                    Exemplo: Acréscimo de um serviço, funcionalidade, endpoint,
+                    etc.
+                </li>
+                <li className="pb-4">
+                    <span className="bg-gray-400 px-2 rounded mr-2">
+                        refactor:
+                    </span>{' '}
+                    usado quando houver uma refatoração de código que não tenha
+                    qualquer tipo de impacto na lógica/regras de negócio do
+                    sistema. Exemplo: Mudanças de código após um code review
+                </li>
+                <li className="pb-4">
+                    <span className="bg-gray-400 px-2 rounded mr-2">
+                        style:
+                    </span>{' '}
+                    empregado quando há mudanças de formatação e estilo do
+                    código que não alteram o sistema de nenhuma forma. Exemplo:
+                    Mudar o style-guide, mudar de convenção lint, arrumar
+                    indentações, remover espaços em brancos, remover
+                    comentários, etc..
+                </li>
+                <li className="pb-4">
+                    <span className="bg-gray-400 px-2 rounded mr-2">fix:</span>{' '}
+                    utilizado quando há correção de erros que estão gerando bugs
+                    no sistema. Exemplo: Aplicar tratativa para uma função que
+                    não está tendo o comportamento esperado e retornando erro.
+                </li>
+                <li className="pb-4">
+                    <span className="bg-gray-400 px-2 rounded mr-2">
+                        chore:
+                    </span>{' '}
+                    indica mudanças no projeto que não afetem o sistema ou
+                    arquivos de testes. São mudanças de desenvolvimento.
+                    Exemplo: Mudar regras do eslint, adicionar prettier,
+                    adicionar mais extensões de arquivos ao .gitignore
+                </li>
+                <li className="pb-4">
+                    <span className="bg-gray-400 px-2 rounded mr-2">docs:</span>{' '}
+                    usado quando há mudanças na documentação do projeto.
+                    Exemplo: adicionar informações na documentação da API, mudar
+                    o README, etc.
+                </li>
+                <li className="pb-4">
+                    <span className="bg-gray-400 px-2 rounded mr-2">
+                        build:
+                    </span>{' '}
+                    utilizada para indicar mudanças que afetam o processo de
+                    build do projeto ou dependências externas. Exemplo: Gulp,
+                    adicionar/remover dependências do npm, etc.
+                </li>
+                <li className="pb-4">
+                    <span className="bg-gray-400 px-2 rounded mr-2">perf:</span>{' '}
+                    indica uma alteração que melhorou a performance do sistema.
+                    Exemplo: alterar ForEach por while, melhorar a query ao
+                    banco, etc.
+                </li>
+                <li className="pb-4">
+                    <span className="bg-gray-400 px-2 rounded mr-2">ci:</span>{' '}
+                    utilizada para mudanças nos arquivos de configuração de CI.
+                    Exemplo: Circle, Travis, BrowserStack, etc.
+                </li>
+                <li className="pb-4">
+                    <span className="bg-gray-400 px-2 rounded mr-2">
+                        revert:
+                    </span>{' '}
+                    indica a reverão de um commit anterior.
+                </li>
+            </ul>
+            <h3 className="text-3xl font-bold text-left w-full">
+                Scope: contextualizando o commit
+            </h3>
+            <p>
+                Nesse ponto — e seguindo as convenções passadas — conseguimos
+                entender o tipo de alteração que foi realizada no commit (commit
+                type) e entender com clareza o que o commit irá trazer se
+                aplicado (commit subject).
+            </p>
+            <p>Entretanto, até aonde essa mudança pode afetar ?</p>
+            <p>
+                Em repositórios enormes, como monorepos, ou projetos com várias
+                features e mudanças paralelas, não fica bastante claro até onde
+                a mudança que irá chegar pode alterar. Para isso, podemos
+                utilizar o escopo(scope) do commit.
+            </p>
+            <p>
+                Exemplo de commit utilizando o scope Mesmo o scope não sendo
+                obrigatório, ele pode ser utilizado para contextualizar o commit
+                e trazer menos responsabilidade para a subject, uma vez que
+                dispondo do tipo de commit e o contexto que foi aplicado, a
+                mensagem deve ser o mais breve e concisa possível. Lembrando que
+                o scope deve ser inserido no commit entre parênteses.
+            </p>
+            <p>
+                Além disso, no caso do scope é possível adicionarmos múltiplos
+                valores, como por exemplo: Caso houvesse uma refatoração de
+                código em um repositório com versões mobile, web e desktop. A
+                qual afeta o contexto mobile e web, poderíamos escrever o commit
+                da seguinte maneira:
+            </p>
+        </>
+    )
+}
+
 const MockNewsContent = [
     {
         title: 'Starting and Growing a Career in Web Design',
@@ -479,6 +602,14 @@ const MockNewsContent = [
         id: 5,
         link: 'how-to-create-an-effective-design-portfolio',
         content: <HowPortifolioContent />,
+    },
+    {
+        title: 'How to Commit your Changes in your Code',
+        time: 'August 13, 2024',
+        img: '/commits.png',
+        id: 6,
+        link: 'how-to-commit-your-changes',
+        content: <HowCommitContent />,
     },
 ]
 
